@@ -6,9 +6,9 @@ $(document).ready(function(){
     var gamesNum = parseInt($("select#games").val());
     var carNum = parseInt($("select#car").val());
     var petNum = parseInt($("select#pet").val());
-    console.log(petNum);
-    var addNum = favoriteDayNum + sportsNum + gamesNum + carNum + petNum;
 
+    var addNum = favoriteDayNum + sportsNum + gamesNum + carNum + petNum;
+    $(".result").hide();
     if(addNum <=10){
       $(".csharp").show();
     }else if ( addNum === 20 ){
